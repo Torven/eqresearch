@@ -141,6 +141,10 @@ https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
 
 /* ====================== Right Sidebar =========================================== */
 
+.td-page-meta a:not(.td-page-meta__lastmod) {
+  display: none !important;
+}
+
 .td-main .td-sidebar-toc {
 	background-color: #222222 !important;
 	background-image: linear-gradient(rgba(25, 25, 50, 0.85), rgba(50, 50, 100, 0.85)), url('/images/sidebar-right-background.webp');

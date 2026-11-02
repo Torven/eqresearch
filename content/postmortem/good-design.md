@@ -142,7 +142,7 @@ an easier camp (like one where single pulls were easy) might result in more expe
 risk of death are lower there and this frequently made the best choice of camps not obvious.  Forcing players to make 
 difficult decisions (in all aspects of the game) is what designers should strive for.
 
-EverQuest was game where achieving full BIS gear was more or less impossible unless you ran a very successful guild with 
+EverQuest was a game where achieving full BIS gear was more or less impossible unless you ran a very successful guild with 
 an iron first or your DKP system was miscalibrated.  This is not something players tolerate nowadays because they're used
 to modern games, but I think it's better that players not have everything. (perhaps not _quite_ as strict as EQ was)  It's
 better to always have something to chase after, and that everybody's gear profile is unique.  It makes the raid drops more 
