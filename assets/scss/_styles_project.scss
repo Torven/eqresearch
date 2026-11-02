@@ -1,0 +1,274 @@
+/*
+Project-specific styles. For details, see:
+https://www.docsy.dev/docs/content/lookandfeel/#project-style-files
+*/
+
+// Dark mode enhancements
+@import 'td/color-adjustments-dark';
+@import 'td/code-dark';
+@import 'td/gcs-search-dark';
+@import 'td/extra/buttons';
+@import 'td/extra/main-container';
+
+
+// Center content area "Tags:" and "Categories:"
+.td-content .taxonomy-title {
+    color: Indigo !important;
+}
+
+.td-content blockquote {
+	border-left: 6px solid MediumPurple !important;
+}
+
+/* ====================== Navbar =============================  */
+
+.td-main main.col-12 {
+    /* 1. Clear out previous background properties */
+    background: none;
+
+    /* 2. Define standard transparent border matching your asset's frame width */
+    border: 42px solid transparent; 
+
+    border-image-source: url('/images/border-frame.png');
+    border-image-slice: 42 fill;
+    border-image-repeat: round;
+    padding: 1.0rem;
+	margin-top: 4rem;
+}
+
+/* Hides the default text site title string */
+.td-navbar .navbar-brand__name {
+    display: none !important;
+}
+
+/* Hides the default theme icon or logo placeholder */
+.td-navbar .navbar-brand__logo {
+    display: none !important;
+}
+
+.td-navbar {
+  background-image: url('/images/navbar-background.webp') !important;
+  //background-size: cover !important;
+  background-position: left top !important;
+  background-size: auto !important;
+  background-repeat: no-repeat !important;
+  background-color: #181620 !important;
+}
+
+// invisible SVG for link click on logo in bg image
+.td-navbar .navbar-brand {
+  width: 175px !important;
+  height: 47px !important;
+  padding: 0 !important;
+  margin-left: 5px !important; /* Shifts the click area slightly away from the exact screen edge */
+}
+
+.td-navbar .navbar-nav .nav-link {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1) !important;
+}
+
+
+
+/* ======================== Left Navigation Sidebar ============================== */
+
+.td-sidebar {
+	background-color: #222222 !important;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.85), rgba(50, 50, 100, 0.85)), url('/images/sidebar-left-background.webp');
+    background-size: auto;        // Renders image 1-to-1 pixel wise
+    background-repeat: no-repeat;
+    background-position: top left;
+	background-attachment: fixed;
+    
+    margin-top: var(--td-navbar-height, 4rem); 
+    padding: 1.5rem;
+}
+
+// the line under "Docs"
+.td-sidebar-nav .td-sidebar-link.tree-root {
+    border-bottom: 1px solid Gold;
+}
+
+// The vertical border separating the left navigation sidebar and the content area
+.td-sidebar {
+    border-right: 1px solid #495057 !important;
+}
+
+// the downpointing arrow indicating that the link is the current page
+.foldable-nav .with-child > input:checked ~ label::before {
+    color: Gold !important;
+}
+
+// Targets the span text inside the sidebar navigation links during a mouse hover
+.td-sidebar-nav a:hover span,
+.td-sidebar-nav .td-sidebar-link:hover span {
+    color: Gold !important;
+}
+
+.td-sidebar-nav a.active span
+{
+    color: Khaki !important;
+}
+
+// Targets the "Search this site..." placeholder text inside the input box
+.td-sidebar .td-search-input::placeholder,
+.td-sidebar .td-search__input::placeholder {
+    color: grey !important;
+}
+
+// magnifying glass icon
+.td-search:not(:focus-within) {
+    color: grey !important;
+}
+
+// Targets the actual input element where the border and rounded corners live
+.td-sidebar .td-search__input,
+.td-sidebar .td-search-input {
+    border-color: Grey !important;
+}
+
+
+
+/* === Left and Right Sidebar === */
+.td-sidebar-nav a,
+.td-sidebar-nav label,	// arrow bullets pointing right
+.td-sidebar-nav span,   // left sidebar links/text
+.td-toc a,              // right sidebar links
+.td-toc h6 {
+  color: Cornsilk !important;
+}
+
+
+
+/* ====================== Right Sidebar =========================================== */
+
+.td-main .td-sidebar-toc {
+	background-color: #222222 !important;
+	background-image: linear-gradient(rgba(25, 25, 50, 0.85), rgba(50, 50, 100, 0.85)), url('/images/sidebar-right-background.webp');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-top: var(--td-navbar-height, 4rem);
+    min-height: calc(100vh - var(--td-navbar-height, 4rem));
+}
+
+// The line separating the right sidebar and the center content area
+.td-sidebar-toc {
+    border-left: 1px solid #495057 !important;
+}
+
+.td-sidebar-toc .taxonomy-title {
+    color: MediumPurple !important;
+}
+
+// Targets the hover background color for all items in the Table of Contents
+.td-toc #TableOfContents a:hover {
+    background-color: MidnightBlue !important;
+    color: Gold !important; 
+}
+
+// Targets the highlighted section line when the mouse is NOT hovering over it
+.td-toc #TableOfContents a.active {
+    background-color: DarkSlateBlue !important;
+	border-left: 2px solid MediumPurple !important;
+    
+    // Optional: Change the text color so it remains readable against the background
+    color: gold !important; 
+}
+
+// "On this page"
+.td-toc-title {
+    color: Cornsilk !important;
+    border-bottom: 1px solid Gold;
+}
+
+// tag cloud and categories underlines
+.taxonomy-terms-cloud .taxonomy-title {
+    border-bottom: 1px solid Gold;
+}
+
+.taxonomy-term {
+    color: Indigo !important;
+	background-color: Cornsilk !important;
+}
+
+
+
+/* ====================== Footer =========================================== */
+
+.td-footer {
+    background-image: linear-gradient(rgba(50, 50, 100, 0.85), rgba(25, 25, 50, 0.85)), url('/images/footer.webp');
+    background-size: auto;             /* Renders the image 1-to-1 pixel wise */
+    background-repeat: repeat;
+    background-position: bottom center;
+    padding-bottom: 4rem;
+    min-height: 150px; 
+}
+
+// The line separating the footer and the center content area
+.td-footer {
+    border-top: 1px solid #495057 !important;
+}
+
+ .td-footer__center {
+    flex: 0 0 100%;
+    max-width: 100%;
+    white-space: nowrap; // optional: keep on one line when it fits
+}
+
+/* ====================== Tables =========================================== */
+
+.td-content table,
+table.td-table,
+.table {
+  background-color: transparent !important;
+
+  thead th,
+  thead td {
+    background-color: Cornsilk;
+    color: Black;
+  }
+
+  tbody th,
+  tbody td {
+    background-color: Cornsilk;
+    color: Black;
+  }
+
+  th, td {
+    border-color: Goldenrod;
+  }
+}
+
+/* ====================== Tags and Categories Pages =========================================== */
+
+//container-fluid td-default td-outer
+
+.td-term {
+    //background-color: DarkSlateBlue;
+	background-color: #100550;
+}
+
+.td-taxonomy {
+	background-color: #100550;
+}
+
+.taxonomy-terms-page h1 {
+	color: Gold;
+}
+
+.taxonomy-taxonomy-page {
+	color: Gold;
+}
+
+.article-teaser.card {
+	background-color: NavajoWhite;
+}
+
+
+/* ====================== Code blocks =========================================== */
+
+.highlight,
+.highlight pre,
+pre {
+  background-color: Cornsilk !important;
+}
