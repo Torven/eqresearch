@@ -189,13 +189,19 @@ they could kill it.  This CT had 235 melee hits, DT and knockback.  Apparently e
 - Paineel opens
 - Necromancer Feign Death two minute expiry added
 - Rogues gain Evade, deadly strikes, increased throwing critical chance
-- Mistalker proc pets now disappear after an attack round
+- Mistwalker proc pets now disappear after an attack round
 - Buffs stripped when entering Plane of Sky
 - Group loot message added
 
 **2000-2-23** Players killed by players now respawn without mana (344)
 
 **2000-3-21** Necromancer Feign Death timer changed to pet suicide timer (371)
+
+**2000-4-4** Smedly announces intention to scan process lists for cheats and hacks
+\[[1](https://web.archive.org/web/20010224084853/http://www.hackersquest.gomp.ch/patch-04.04.00.txt)\] (385)
+
+**2000-4-5** Smedly abandons plans to scan process lists
+\[[1](https://web.archive.org/web/20010224082507/http://www.hackersquest.gomp.ch/email-04.05.00.txt)\] (386)
 
 **2000-4-10** (391)
 - Mez spell immunity messages added

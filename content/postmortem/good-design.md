@@ -36,7 +36,7 @@ never reached level cap so only a fraction of WoW's playerbase made dedicated ta
 makes for more class diversity.  EQ has more class diversity.
 
 _**If players have the option to go it alone without drastically reducing their progress rate, then they will largely do so.**_
-This is not what you want in a MMOG.  Players are often introverted nerds that need a push to socialize. (I am exrtemely
+This is not what you want in a MMOG.  Players are often introverted nerds that need a push to socialize. (I am extremely
 introverted myself which may not surprise you)  One reason I love EQ is that it forced me to make life-long friends.  This 
 can happen in WoW of course but it rarely happens while you're leveling up in that game and I would argue significantly 
 less so even at the raid level.  One of my best pals I met in Unrest in my teens.
